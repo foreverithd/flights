@@ -1,13 +1,17 @@
 FROM node:10
 
-WORKDIR /app
+ENV DB_NAME=airline
+ENV DB_KEY=opRAZLntr50jhh6eYDsubYlLFgXFKKNNMY4MMHxQCubxDAowFXqAKXDfh0mFXSqs1LPwmZfKtibtvwnG786yag==
+ENV COSMO_PORT=10255
 
-COPY package.json /src
+RUN mkdir -p /usr/src/app
+
+WORKDIR /usr/src/app
+
+COPY . .
 
 RUN npm install
 
-COPY . /app
-
-CMD node src/server.js
-
 EXPOSE 3000
+
+CMD ["npm", "run", "start"]
