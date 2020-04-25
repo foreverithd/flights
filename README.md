@@ -12,7 +12,7 @@ This code repository contains the prototype for Quantum Airline’s to get the f
 6. Docker Hub - Docker Image repository of the packaged code
 
 Below is the pipeline flow of the application:
-![](readmesupport/AirlineFlightsFlow.PNG)
+![](readmesupport/AirlineFlightsFlow.png)
 
 ## About the project
 The project expose an API, on request fetches the flight data from file and uploades to cosmos db.
