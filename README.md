@@ -8,7 +8,7 @@ This code repository contains the prototype for Quantum Airline’s to get the f
     * Continous Integration - CI Pipeline which listens the comits on github, reads the secret keys from the server, creates docker image and pushes to Docker Hub
     * Continous Deployment - CD Pipeline to deploy the docker images as per the required environment
 
-    ![](readmesupport/cicd.png)
+    ![](readmesupport/cicd.PNG)
 6. Docker Hub - Docker Image repository of the packaged code
 
 Below is the pipeline flow of the application:
