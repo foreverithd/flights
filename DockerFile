@@ -1,5 +1,5 @@
 FROM node:10
-
+EXPOSE 3000
 WORKDIR /app
 
 COPY package.json /src
@@ -10,4 +10,3 @@ COPY . /app
 
 CMD node src/server.js
 
-EXPOSE 3000
